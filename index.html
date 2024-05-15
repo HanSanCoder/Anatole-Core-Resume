@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Cytrogen">
+    <title>HanSan的个人简历</title>
+    <meta name="description" content="A Resume Page Powered By Hexo">
+    <meta name="keywords">
+    <link data-n-head="1" rel="icon" type="image/x-icon"
+        href="https://shot-image.oss-cn-beijing.aliyuncs.com/homepage.jpg">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml">
+    <script src="source/js/jquery.js"></script>
+    <meta name="generator" content="Hexo 6.3.0">
+  <link rel="stylesheet" crossorigin href="/assets/index-CHENmMkJ.css">
+</head>
+
+<body>
+    <div class="sidebar animated fadeInDown">
+        <div class="side-content">
+            <div class="logo-title">
+                <div class="title"><img src="/assets/logo@2x-D2IhEEgC.png" style="width:127px;">
+                    <h3 title=""><a href="/">HanBoBo</a></h3>
+                </div>
+            </div>
+            <ul class="social-links">
+                <li> <i class="fa fa-phone"></i> xxx</li>
+                <li><i class="fa fa-address-card"> </i> xxx yyy zzz</li>
+                <li><a target="_blank" rel="noopener" href="https://github.com/HanSanCoder"><i
+                            class="fa-brands fa-github"></i> HanSanCoder</a>
+                </li>
+                <li><a target="_blank" rel="noopener" href="https://gintama.love"><i class="fa-solid fa-earth-asia">
+                        </i> gintama.love</a></li>
+                <li><a href="mailto:hehansan@gintama.love"><i class="fa fa-envelope"></i> hehansan@gintama.love</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <div class="p"> <span>© 2024 </span><i class="fa fa-star"></i><span> HanSanCoder</span></div>
+        </div>
+    </div>
+    <div class="content" style="display:none;">
+        <script>//- 如果是移动端，则设置content的margin-top为sidebar的高度
+            //- If it is a mobile terminal, set the margin-top of content to the height of sidebar
+            window.onload = function () {
+                if (window.matchMedia("(max-width: 960px)").matches) {
+                    var sidebar = document.querySelector('.sidebar');
+                    var sidebarHeight = sidebar.offsetHeight;
+                    document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+                }
+                //- 页面加载完成后，显示content
+                //- Display content after page loading is complete
+                document.querySelector(`.content`).style.display = "block";
+
+                //- 监听窗口大小变化，假设用户在桌面端上修改了窗口大小，需要重新设置content的margin-top
+                //- Listen for window size changes, assuming that the user modifies the window size on the desktop terminal, the margin-top of content will get reset
+                window.addEventListener('resize', function () {
+                    if (window.matchMedia("(max-width: 960px)").matches) {
+                        var sidebar = document.querySelector('.sidebar');
+                        var sidebarHeight = sidebar.offsetHeight;
+                        document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+                    } else {
+                        //- 如果是桌面端，则设置content的margin-top为60px
+                        //- If it is a desktop terminal, set the margin-top of content to 60px
+                        document.querySelector('.content').style.marginTop = "0px";
+                    }
+                });
+            }
+        </script>
+        <div class="post animated fadeInDown">
+            <!-- <div class="post-title">
+                <h1><a>Hello World</a></h1>
+            </div> -->
+            <h2 class="section-title"><a href="#"><i class="fa-solid fa-graduation-cap"> 教育经历</i></a></h2>
+            <div class="section-item">
+                <div class="section-item-title">
+                    <img src="/assets/xiaohui-_sGczUTH.jpg" alt="Logo" class="logo">
+                    <p class="textbf">北方民族大学</p>
+                    <span>(2021.9-2025.6)</span>
+                </div>
+                <div class="section-item-content">
+                    <p>主要专业：软件工程</p>
+                </div>
+            </div>
+            <h2 class="section-title"><a href="#"><i class="fa-solid fa-users"> 个人经历</i></a></h2>
+            <div class="section-item">
+                <div class="section-item-title">
+                    <p class="nologo textbf">这里写个人经历</p>
+                    <span>(2021.9-2023.6)</span>
+                </div>
+                <div class="section-item-content">
+                    <p></p>
+                </div>
+            </div>
+            <h2 class="section-title"><a href="#"><i class="fa-solid fa-sitemap"> 项目经历</i></a></h2>
+            <div class="section-item">
+                <div class="section-item-title">
+                    <p class="nologo textbf">这里写个人经历</p>
+                    <span>(2021.9-2023.6)</span>
+                </div>
+                <div class="section-item-content">
+                    <p></p>
+                </div>
+            </div>
+            <h2 class="section-title"><a href="#"><i class="fa-solid fa-gears"> 技能</i></a></h2>
+            <div class="section-item">
+                <div class="section-item-title"></div>
+                <div class="section-item-content">
+                    <p>
+                    <ul>
+                        <li>
+                            <p> 熟悉 Java 语法和标准库，对面向对象编程思想和设计模式有深刻理解。</p>
+                        </li>
+                        <li>
+                            <p> 了解 JVM 虚拟机相关知识，如字节码，JMM 内存模型、垃圾回收机制等。</p>
+                        </li>
+                        <li>
+                            <p> 熟悉 MySQL 数据库，了解 MongoDB 等 NoSQL 数据库的使用。</p>
+                        </li>
+                        <li>
+                            <p> 熟悉 Spring Boot, Spring Web MVC, Spring Cloud, Mybatis, JUnit 等常见业务框架。</p>
+                        </li>
+                        <li>
+                            <p> 了解 Redis, Gateway, MinIO, Nacos, OpenFeign 等中间件的使用</p>
+                        </li>
+                        <li>
+                            <p> 熟悉 Maven, Gradle 等构建工具和 Git 等版本控制工具的使用。</p>
+                        </li>
+                        <li>
+                            <p> 了解 Linux 操作系统的基本使用和服务部署，了解 Docker, Kubernetes 等容器编排系统的使用。</p>
+                        </li>
+                        <li>
+                            <p> 熟悉 Jmeter, Postman等常见测试工具使用。</p>
+                        </li>
+                        <li>
+                            <p> 了解 Go, JavaScript程序语言的编写。</p>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="source/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="source/js/jquery.appear.js"></script>
+</body>
+
+</html>

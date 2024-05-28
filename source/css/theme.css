@@ -58,22 +58,42 @@ a {
 }
 
 .section-title {
+    font-size: 1.8em;
     margin-top: 10px;
     margin-bottom: 8px;
 }
-
 
 .section-item {
     margin-bottom: 60px;
 }
 
+.section-item-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-logo {
+    width: 40px;
+    height: 40px;
+    margin-top: 11px;
+    flex-shrink: 0;
+}
+
+.header-item {
+    display: flex;
+    flex-direction: column;
+}
+
 .section-item-title {
+    margin-top: 14px;
     display: flex;
     align-items: center;
 }
 
 .textbf {
-    font-weight: 600;
+    font-weight: 550;
 }
 
 .section-item-title p {
@@ -84,28 +104,32 @@ a {
 }
 
 .section-item-title .nologo {
-    font-size: 1.25em;
-    margin-left: 3em;
+    font-size: 1.3em;
+    /* margin-left: 3em; */
+}
+
+.section-item-summary {
+    margin-bottom: 9px;
+    font-size: 1em;
 }
 
 .section-item-content p {
     margin: 0;
-    padding-left: 3em;
+    font-size: 0.95em;
+    /* margin-bottom: 4px; */
 }
 
+.space {
+    margin-bottom: 4px;
+}
 
 .section-item-content ul {
     margin-top: 0;
+    margin-bottom: 4px;
     margin-left: 0.5em;
+    list-style-type: circle;
 }
 
 .section-item-content ul li p {
     padding: 0;
-}
-
-.logo {
-    width: 1.7em;
-    height: 1.7em;
-    margin-left: 1em;
-    margin-right: 6px;
 }

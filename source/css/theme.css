@@ -104,18 +104,24 @@ a {
 }
 
 .section-item-title .nologo {
-    font-size: 1.3em;
+    font-size: 1.4em;
     /* margin-left: 3em; */
 }
 
 .section-item-summary {
     margin-bottom: 9px;
+    font-size: 0.95em;
+}
+
+.header-item .section-item-content p {
+    margin: 0;
     font-size: 1em;
+    /* margin-bottom: 4px; */
 }
 
 .section-item-content p {
     margin: 0;
-    font-size: 0.95em;
+    font-size: 1em;
     /* margin-bottom: 4px; */
 }
 
